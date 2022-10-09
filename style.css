@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --accent-color: #546744;
+  --input-border: #E5E7EB;
+  --main-font-color: rgb(32, 32, 32);
+  --border-radius: 6px;
+}
+@font-face {
+  font-family: Norce;
+  src: url(./images/Norse-Bold.otf);
+}
+h1 {
+  font-family:  Norce;
+  color: #fff;
+  font-size: 6em;
+}
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+p {
+  font-size: 1.2em;
+  color: var(--main-font-color);
+  font-weight: 700;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.brand {
+  background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+  object-fit: cover;
+  background-size: cover;
+}
+.odin {
+  display: flex;
+  align-items: center;
+  margin: 8em auto;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1em;
+}
+.odin img {
+  width: 6em;
+  height: auto;
+}
+
+.the-form {
+  display: flex;
+  flex-direction: column;
+  background: #F9FAFB;
+}
+.headline {
+  margin: 2em 1em;
+}
+.headline p:last-child {
+  margin-top: 1em;
+}
+.main-form {
+  background: #fff;
+  padding: 1em;
+  box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+}
+.forma {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.forma > div {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+}
+.forma > div > label {
+  background: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(75, 75, 75);
+  letter-spacing: 2px;
+}
+
+.forma > div > input {
+  padding: 0.8em 0.5em;
+  border: 1px solid var(--input-border);
+  border-radius: var(--border-radius);
+  width: 80%;
+}
+input {
+  font-size: 1em;
+  font-weight: 500;
+}
+input:focus-visible {
+  outline: 1px solid rgb(0, 81, 255);
+}
+
+.cta {
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+button {
+  background: var(--accent-color);
+  color: #fff;
+  padding: 1em 3em;
+  font-size: 1em;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 3px 6px 0px rgba(98, 119, 72, 0.2);
+  cursor: pointer;
+}
+button:hover {
+  background: #425036;
+}
+.error {
+  font-size: 0.7em;
+  color: red;
+}
+.err {
+  outline: 1px solid rgb(255, 0, 13);
+}
+@media screen and (min-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  .brand {
+    flex: 1;
+  }
+  .headline {
+    margin: 3em;
+    width: 60%;
+    font-size: 1.2em;
+  }
+  .main-form {
+    padding: 1em 3em;
+  }
+  .cta {
+    padding: 3em;
+  }
+  .the-form {
+    flex: 2;
+  }
+  .forma {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap: 1em; */
+  }
+  .forma > div {
+    width: 40%;
+  }
+  .cta {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cta h3 {
+    width: 100%;
+  }
+}

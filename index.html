@@ -8,7 +8,57 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <main>
+    <div class="container">
+      <div class="brand">
+        <div class="odin">
+          <img src="./images/odin-lined.png" alt="Odin">
+          <h1>ODIN</h1>
+        </div>
+      </div>
+      <div class="the-form">
+        <div class="headline">
+          <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+          <p>Sign up <em>now</em> to get started.</p>
+          <p>You know you want to.</p>
+        </div>
+        <div class="main-form">
+          <h2>Let'do this!</h2>
+          <form class="forma" action="">
+            <div class="first-name">
+              <label for="First Name">First Name</label>
+              <input type="text" id="first-name" required>
+            </div>
+            <div class="last-name">
+              <label for="Last Name">Last Name</label>
+              <input type="text" id="last-name" required>
+            </div>
+            <div class="email">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="phone">
+              <label for="phone">Phone number</label>
+              <input type="tel" name="phone" id="phone" required>
+            </div>
+            <div class="password">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="pass">
+              <p class="error"></p>
+            </div>
+            <div class="second-password">
+              <label for="password">Confirm Password</label>
+              <input type="password" name="second-password" id="secondpass" required>
+            </div>
+          </form>
+        </div>
+        <div class="cta">
+          <button>Create Account</button>
+          <h3>Already have an account? <a href="#">Log in</a></h3>
+        </div>
+      </div>
+    </div>
+  </main>
   <script src="main.js"></script>
 </body>
 </html>
